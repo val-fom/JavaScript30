@@ -60,11 +60,11 @@
 <script>
   
   function playSound(e) {
-    var audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); // Backquotes & ${...} const
     if (!audio) return;
     audio.currentTime = 0;
     audio.play();
-    var key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`); // Backquotes & ${...} const
     key.classList.add('playing');
   }
 
@@ -73,8 +73,8 @@
     this.classList.remove('playing');
   }
 
-  var keys = document.querySelectorAll('.key');
-  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  const keys = document.querySelectorAll('.key'); // const
+  keys.forEach(key => key.addEventListener('transitionend', removeTransition)); // Arrow function
 
   window.addEventListener('keydown', playSound);
 

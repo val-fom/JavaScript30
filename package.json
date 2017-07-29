@@ -1,8 +1,8 @@
 {
   "name": "javascript30",
-  "version": "1.0.0",
+  "version": "",
   "description": "![](https://javascript30.com/images/JS3-social-share.png)",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/val-fom/JavaScript30.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Valentyn Fomenko",
+  "license": "",
   "bugs": {
     "url": "https://github.com/val-fom/JavaScript30/issues"
   },
